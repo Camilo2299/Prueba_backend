@@ -31,9 +31,9 @@ public class DomicilioController {
     public String eliminarPorId(@PathVariable("idDomicilio") Long idDomicilio){
         boolean ok = this.domicilioService.eliminarDomicilio(idDomicilio);
         if (ok){
-            return "Se eliminó el producto con id " + idDomicilio;
+            return "Se eliminó el domicilio con id " + idDomicilio;
         }else{
-            return "No pudo producto el usuario con id" + idDomicilio;
+            return "No pudo domicilio el usuario con id" + idDomicilio;
         }
     }
 

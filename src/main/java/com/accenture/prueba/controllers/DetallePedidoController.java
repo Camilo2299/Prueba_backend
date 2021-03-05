@@ -84,7 +84,7 @@ public class DetallePedidoController {
         }
         boolean ok = this.detallePedidoService.eliminarDetallePedido(idDetallePedido);
         if (ok) {
-            return "Se eliminó el pedido con recargo del 10% con id " + idDetallePedido + "Valor a pagar" + recargo;
+            return "Se eliminó el pedido con recargo del 10% con id " + idDetallePedido + " Valor a pagar: " + recargo;
         } else {
             return "No pudo eliminar el pedido con id" + idDetallePedido;
         }
